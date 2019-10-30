@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sample</title>
+    <script>
+      /* These global variables are expected on production */
+      var globalVars = {
+        domain: 'news.com.au'
+      }
+
+      /* These custom variables are expected to exposed on production */
+      var customVars = {}
+    </script>
+    <style>
+      /* Expected styles on production */
+  	</style>
+
+  </head>
+  <body>
+    <%= require('html-loader!./body.html') %>
+  </body>
+</html>
